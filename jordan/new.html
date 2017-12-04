@@ -56,23 +56,20 @@
            6. Some way to know if this article is a draft or is published -->
         <form action="#" id="new-form">
           <label>
-            <input type="text" placeholder="Article Title" required>
+            <input id="title" type="text" placeholder="Article Title" required>
           </label>
-          <textarea rows="8" cols="80" placeholder="Article Body"></textarea>
+          <textarea id="body" rows="8" cols="80" placeholder="Article Body"></textarea>
           <label>
-            <input type="text" placeholder="Author Name" required>
-          </label>
-          <label>
-            <input type="text" placeholder="Author URL" required>
+            <input id="author" type="text" placeholder="Author Name" required>
           </label>
           <label>
-            <input type="text" placeholder="Article Title" required>
+            <input id="authorUrl" type="text" placeholder="Author URL" required>
           </label>
           <label>
-            <input type="text" placeholder="Article Category" required>
+            <input id="category" type="text" placeholder="Article Category" required>
           </label>
           <label>
-            <input type="checkbox" value="Draft" required>
+            <input id="published" type="checkbox" value="Draft" required>
             <label type="text"></label>Published
           </label>
           <!-- use text area for article body -->
@@ -85,7 +82,7 @@
       </section>
 
       <section id="article-export">
-        <!-- DONE: Refer to the preview image to see what we will be building here: we need a container of some kind to hold a JSON export of our article. Ideally this container would show only a incipit (short preview) of the JSON and also be clickable to allow easy selection of the text it holds. What kind of element could we use for this? -->
+        <!-- TODO: Refer to the preview image to see what we will be building here: we need a container of some kind to hold a JSON export of our article. Ideally this container would show only a incipit (short preview) of the JSON and also be clickable to allow easy selection of the text it holds. What kind of element could we use for this? -->
         <label id="export-field" for="article-json" class="pull-right">
           <input type="text" readonly id="article-json">
           When finalized, copy the above JSON, and paste into blogArticles.js
